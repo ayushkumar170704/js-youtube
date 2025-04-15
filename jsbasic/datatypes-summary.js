@@ -65,3 +65,35 @@ const myFunction = function(){
 // function will retun function but it is said to be object function
 // non primitive type will always give function for datatypes all the non primitive give function data type
 
+//==============================================================================================
+
+// Stack(primitive), Heap(non - primitive)
+
+
+// whenever stack memory is declared you will get a copy of the variable
+// and for the heap you will get referecnce for the original value
+
+// let myYoutubename = "ayushkumar.com"
+
+// let anothername = "myYoutubename"
+// anothername = "chaiaurcode"
+
+// console.log(myYoutubename)
+// console.log(anothername)
+
+
+let user = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+
+let userrr = user
+
+userrr.email = "ayuhsssss2gmail.com"
+
+console.log(userrr.email);
+console.log(user.email);
+
+
+
