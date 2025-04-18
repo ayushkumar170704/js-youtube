@@ -28,9 +28,36 @@ const   regularUser = {
 
 const obj1 = { 1:"a", 2:"b"}
 const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a" , 6: "b"}
 
 // const obj3 = { obj1, obj2}
 // console.log(obj3);   { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 
-const obj3 = Object.assign({},obj1,obj2)
-console.log(obj3);
+//const obj3 = Object.assign({},obj1,obj2,obj4)
+
+
+const obj3 = {...obj1, ...obj2}  // this is the spreading technique which mostly used in array 
+
+
+// console.log(obj3);
+// { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }  // in the const obj3 = Object.assign({},obj1,obj2,obj4) the {}  this the target and this is the value assigned
+//obj1,obj2,obj4 into the target
+
+const user = [
+    {
+        id : "afsd",
+        email : "ha@gmailcom"
+    }
+]
+
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+console.log(tinderUser.hasOwnProperty("isLoggedIn")); 
+// { id: '123abc', name: 'sammy', isLoggedIn: false }
+// [ 'id', 'name', 'isLoggedIn' ]
+// [ '123abc', 'sammy', false ]
+// [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
+// true
