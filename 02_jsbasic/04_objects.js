@@ -50,14 +50,37 @@ const user = [
     }
 ]
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty("isLoggedIn")); 
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); 
 // { id: '123abc', name: 'sammy', isLoggedIn: false }
 // [ 'id', 'name', 'isLoggedIn' ]
 // [ '123abc', 'sammy', false ]
 // [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
 // true
+
+
+
+
+const course = {
+    coursename : "js ",
+    price: "999",
+    courseInstructor: "ayush"   
+}
+
+//course.courseInstructor
+
+const {courseInstructor} = course
+
+console.log(courseInstructor);
+
+
+//  api can be given into arrays and object too 
+// {
+//     "name": "ayush",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// } this is an object given as api
