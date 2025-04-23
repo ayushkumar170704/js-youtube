@@ -20,3 +20,7 @@ addTwoNumbers(3,4)
 
 
 console.log(addTwoNumbers);
+function divideTwoNumbers(number1 , number2){
+    console.log(number1 / number2);
+}
+divideTwoNumbers(3,4);
